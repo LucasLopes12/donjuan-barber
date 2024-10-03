@@ -233,3 +233,33 @@ h1 .don-juan {
     line-height: 1.5;
   }
 }
+.typing-demo {
+  width: 65ch; /* Largura do texto de digitação */
+  animation: typing 2s steps(22), blink .5s step-end infinite alternate; /* Animações de digitação e piscar */
+  white-space: nowrap; /* Não permite quebra de linha */
+  overflow: hidden; /* Oculta texto que excede a largura */
+  border-right: 3px solid; /* Borda à direita para simular cursor */
+  font-family: monospace; /* Fonte monoespaçada para efeito de digitação */
+  font-size: 2em; /* Tamanho da fonte */
+}
+
+@keyframes typing {
+  from {
+    width: 0; /* Inicia com largura 0 */
+  }
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent; /* Borda invisível na metade do tempo */
+  }
+}
+
+/* Estilo da fonte "Great Vibes" */
+.great-vibes-regular {
+  font-family: "Great Vibes", cursive; /* Fonte cursiva */
+  font-weight: 400; /* Peso da fonte */
+  font-style: normal; /* Estilo normal */
+  font-size: 80px; /* Tamanho da fonte */
+  color: gold; /* Cor da fonte */
+}
